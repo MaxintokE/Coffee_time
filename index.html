@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Website </title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">☕ Coffee</h2>
+        </a>
+
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="section-content">
+          <div class="hero-details">
+            <h2 class="title">Best Coffee</h2>
+            <h3 class="subtitle">Make your day great with our special coffee!</h3>
+            <p class="description">Welcome to our coffee paradise, where every bean tells a story and every cup sparks joy.</p>
+
+            <div class="buttons">
+              <a href="#" class="button order-now">Order Now</a>
+              <a href="#contact" class="button contact-us">Contact Us</a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <img src="https://t4.ftcdn.net/jpg/10/48/62/25/360_F_1048622539_EEAhb9V8DFnH7Se3s39S9RVRngTIdwrR.jpg" alt="Coffee" class="hero-image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="https://t4.ftcdn.net/jpg/02/87/06/59/360_F_287065965_8IDYqbuIs0w0no04lxERk2pIcS2kT44R.webp" alt="About" class="about-image" />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">About Us</h2>
+            <p class="text">At Coffee House in Kisumu, Kenya, we pride ourselves on being a go-to destination for coffee lovers and conversation seekers alike. We're dedicated to providing an exceptional coffee experience in a cozy and inviting atmosphere, where guests can relax, unwind, and enjoy their time in comfort.</p>
+            <div class="social-link-list">
+              <a href="https://www.facebook.com" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://x.com/home" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div> 
+   
+          </div>
+          <div class="h-screen dark:bg-gray-900">
+  <div class="pt-12 bg-gray-50 dark:bg-gray-900 sm:pt-20">
+    <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        
+        
+      </div>
+    </div>
+    <div class="pb-12 mt-10 bg-gray-50 dark:bg-gray-900 sm:pb-16">
+      <div class="relative">
+        <div class="absolute inset-0 h-1/2 bg-gray-50 dark:bg-gray-900"></div>
+        <div class="relative max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto">
+            <dl class="bg-white dark:bg-gray-800 rounded-lg shadow-lg sm:grid sm:grid-cols-3">
+              <div
+                class="flex flex-col p-6 text-center border-b border-gray-100 dark:border-gray-700 sm:border-0 sm:border-r">
+                <dt class="order-2 mt-2 text-lg font-medium leading-6 text-gray-500 dark:text-gray-400" id="item-1">
+                  Cups Brewed
+                </dt>
+                <dd class="order-1 text-5xl font-extrabold leading-none text-indigo-600 dark:text-indigo-100"
+                  aria-describedby="item-1" id="cupsCount">
+                  0
+                </dd>
+              </div>
+              <div
+                class="flex flex-col p-6 text-center border-t border-b border-gray-100 dark:border-gray-700 sm:border-0 sm:border-l sm:border-r">
+                <dt class="order-2 mt-2 text-lg font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  Beans Roasted
+                </dt>
+                <dd class="order-1 text-5xl font-extrabold leading-none text-indigo-600 dark:text-indigo-100"
+                  id="beansCount">
+                  0
+                </dd>
+              </div>
+              <div
+                class="flex flex-col p-6 text-center border-t border-gray-100 dark:border-gray-700 sm:border-0 sm:border-l">
+                <dt class="order-2 mt-2 text-lg font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  Happy Customers
+                </dt>
+                <dd class="order-1 text-5xl font-extrabold leading-none text-indigo-600 dark:text-indigo-100"
+                  id="customersCount">
+                  0
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const targets = [
+    { element: document.getElementById('cupsCount'), count: 12000, suffix: '+' },
+    { element: document.getElementById('beansCount'), count: 50000, suffix: '+' },
+    { element: document.getElementById('customersCount'), count: 300000, suffix: '+' }
+  ];
+
+  // Find the maximum count among all targets
+  const maxCount = Math.max(...targets.map(target => target.count));
+
+  // Function to animate count-up effect
+  function animateCountUp(target, duration) {
+    let currentCount = 0;
+    const increment = Math.ceil(target.count / (duration / 10));
+
+    const interval = setInterval(() => {
+      currentCount += increment;
+      if (currentCount >= target.count) {
+        clearInterval(interval);
+        currentCount = target.count;
+        target.element.textContent = currentCount + target.suffix;
+      } else {
+        target.element.textContent = currentCount;
+      }
+    }, 10);
+  }
+
+  // Animate count-up for each target with adjusted duration
+  targets.forEach(target => {
+    animateCountUp(target, maxCount / 100); // Adjust duration based on max count
+  });
+</script>
+
+           
+      
+    </div>
+  </div>
+</div>
+
+
+        </div>
+      </section>
+
+      <!-- Menu section -->
+      <section class="menu-section" id="menu">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="section-content">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <img src="https://assets.bonappetit.com/photos/57accd9af1c801a1038bc792/1:1/w_320,c_limit/Hot-Chocolate-1-of-5.jpg" alt="Hot Beverages" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Hot Beverages</h3>
+                <p class="text">Wide range of Steaming hot coffee to make you fresh and light.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="https://www.bhf.org.uk/-/media/images/information-support/heart-matters/heart-matters/winter-2017-18/nutrition/hot-drinks/healthy_hot_drinks_coffee_620x400_exp1120.jpg?rev=2bf0be0e3ee54e19afe6085223608271&hash=B461F5D3FCA1C9EBF34488151C471117" alt="Cold Beverages" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Cold Beverages</h3>
+                <p class="text">Creamy and frothy cold coffee to make you cool.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="http://www.foodiecrush.com/wp-content/uploads/2018/07/Tropical-Slushie-foodiecrush.com-063-683x1024.jpg" alt="Refreshment" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Refreshment</h3>
+                <p class="text">Fruit and icy refreshing drink to make feel refresh.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="https://cdn.shopify.com/s/files/1/0918/3414/files/food-and-coffee-pairings.jpg?v=1650655089" alt="Special Combos" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Special Combos</h3>
+                <p class="text">Your favorite eating and drinking combations.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="https://i.pinimg.com/originals/bc/f6/37/bcf63798633cb6152d438630598d0250.jpg" alt="Dessert" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Dessert</h3>
+                <p class="text">Satiate your palate and take you on a culinary treat.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="https://media.gettyimages.com/id/1446965535/photo/homemade-burger-and-chips.jpg?s=612x612&w=0&k=20&c=Jkd0Wy--ZC67arDiOXusyI-GKO6OAXzNehkj2Gnz02o=" alt="burger & French Fries" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Burger & French Fries</h3>
+                <p class="text">Quick bites to satisfy your small size hunger.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Testimonials section -->
+      <section class="testimonials-section" id="testimonials">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="testimonials-list swiper-wrapper">
+                <li class="testimonial swiper-slide">
+                  <img src="https://media.istockphoto.com/id/1300972573/photo/pleasant-young-indian-woman-freelancer-consult-client-via-video-call.jpg?s=612x612&w=0&k=20&c=cbjgWR58DgUUETP6a0kpeiKTCxwJydyvXZXPeNTEOxg=" alt="User" class="user-image" />
+                  <h3 class="name">Sarah i Clight</h3>
+                  <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will order again!"<div class="flex flex-row items-center justify-center gap-2 text-2xl">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="32" height="32"
+        class="text-green-400">
+        <path fill-rule="evenodd"
+            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+            clip-rule="evenodd"></path>
+    </svg>
+    <p class="font-bold text-green-600">
+        <span>8 / 10</span>
+    </p>
+</div></i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="https://cdn.pixabay.com/photo/2015/12/09/04/27/a-single-person-1084191_640.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Mark Wilson</h3>
+                  <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fast shipping too!"<div class="flex flex-row items-center justify-center gap-2 text-2xl">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="32" height="32"
+        class="text-green-400">
+        <path fill-rule="evenodd"
+            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+            clip-rule="evenodd"></path>
+    </svg>
+    <p class="font-bold text-green-600">
+        <span>9 / 10</span>
+    </p>
+</div></i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="https://photogov-com.akamaized.net/examples/us-passport-photo/landmarks-US.webp" alt="User" class="user-image" />
+                  <h3 class="name">Michael brandon</h3>
+
+                  <i class="feedback">"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"<div class="flex flex-row items-center justify-center gap-2 text-2xl">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="32" height="32"
+        class="text-green-400">
+        <path fill-rule="evenodd"
+            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+            clip-rule="evenodd"></path>
+    </svg>
+    <p class="font-bold text-green-600">
+        <span>8.5 / 10</span>
+    </p>
+</div></i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="https://t4.ftcdn.net/jpg/00/79/74/41/360_F_79744147_CwGIjIoViiIAhlVKgXNjqWtrigLqchie.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Emily loise</h3>
+
+                  <i class="feedback">"Excellent quality! Fresh beans and quick delivery. Highly recommend."<div class="flex flex-row items-center justify-center gap-2 text-2xl">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="32" height="32"
+        class="text-green-400">
+        <path fill-rule="evenodd"
+            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+            clip-rule="evenodd"></path>
+    </svg>
+    <p class="font-bold text-green-600">
+        <span>9.5 / 10</span>
+    </p>
+</div></i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="https://t4.ftcdn.net/jpg/07/92/37/17/360_F_792371799_SYRZRLqm9r1jK36rfF6I2CwA1VR4Ele0.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Anthony Thompson</h3>
+
+                  <i class="feedback">"Best decaf I've tried! Smooth and flavorful. Arrived promptly."<div class="flex flex-row items-center justify-center gap-2 text-2xl">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="32" height="32"
+        class="text-green-400">
+        <path fill-rule="evenodd"
+            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+            clip-rule="evenodd"></path>
+    </svg>
+    <p class="font-bold text-green-600">
+        <span>10 / 10</span>
+    </p>
+</div></i>
+                </li>
+              </ul>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery section -->
+      <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-content">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img src="https://t3.ftcdn.net/jpg/01/36/07/78/360_F_136077824_X3OUNj62tf9kKjxqYFjfez2KO89dt3YH.webp" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="https://t3.ftcdn.net/jpg/03/15/40/34/360_F_315403482_MVo1gSOOfvwCwhLZ9hfVSB4MZuQilNrx.webp" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="https://t3.ftcdn.net/jpg/02/67/56/80/360_F_267568050_gKkcBAI5XkpEHNpipkx2aIarNbwarCRN.webp" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="https://t4.ftcdn.net/jpg/02/86/53/19/360_F_286531991_slAStlBZahYxouKAr0gtp9Wvt0dDTToB.webp" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="https://t3.ftcdn.net/jpg/02/77/76/44/360_F_277764467_XJDRluvEOdt9KI1hEsu5RzC9iNYGFo7c.webp" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="https://t3.ftcdn.net/jpg/03/15/40/34/360_F_315403486_8TAtwx0MVwK2kbFM9YbyKJsewT0l44W2.webp" alt="Gallery Image" class="gallery-image" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>225 Victoria Basin, Lake Victoria, CA 965847</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>himaxwell36@coffeeshopwebsite.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>(+254) 114-002298</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Saturday: 10:00 AM - 3:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sunday: Closed</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-globe"></i>
+              <p>www.Maxlifestyle.com</p>
+            </li>
+          </ul>
+
+          <form action="#" class="contact-form">
+            <input type="text" placeholder="Your name" class="form-input" required />
+            <input type="email" placeholder="Your email" class="form-input" required />
+            <textarea placeholder="Your message" class="form-input" required></textarea>
+            <button type="submit" class="button submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+
+
+      <!-- Footer section -->
+<!-- component -->
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+<footer class="relative bg-blueGray-200 pt-8 pb-6">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap text-left lg:text-left">
+      <div class="w-full lg:w-6/12 px-4">
+        <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+        <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+          Find us on any of these platforms, we typically respond within minutes.
+        </h5>
+      <div class="flex items-center gap-6">
+    <a class="text-gray-700 hover:text-orange-600" aria-label="Visit TrendyMinds LinkedIn" href="https://www.linkedin.com/login" target="_blank"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-8">
+            <path fill="currentColor"
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+            </path>
+        </svg>
+    </a>
+    <a class="text-gray-700 hover:text-orange-600" aria-label="Visit TrendyMinds YouTube" href="https://m.youtube.com/" target="_blank"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-8">
+            <path fill="currentColor"
+                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+            </path>
+        </svg>
+    </a>
+    <a class="text-gray-700 hover:text-orange-600" aria-label="Visit TrendyMinds Facebook" href="https://www.facebook.com/" target="_blank"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="h-8">
+            <path fill="currentColor"
+                d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+            </path>
+        </svg>
+    </a>
+    <a class="text-gray-700 hover:text-orange-600" aria-label="Visit TrendyMinds Instagram" href="https://www.instagram.com/?hl=en" target="_blank"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-8">
+            <path fill="currentColor"
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+            </path>
+        </svg>
+    </a>
+    <a class="text-gray-700 hover:text-orange-600" aria-label="Visit TrendyMinds Twitter" href="https://x.com/home" target="_blank"><svg
+            class="h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+            </path>
+        </svg>
+    </a>
+</div>
+
+    </div>
+      </div>
+        <!-- Responsive Google Map -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="rounded-lg overflow-hidden">
+                  <h4 class="text-3xl fonat-semibold text-blueGray-700">Our Physical Address</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-6/12 px-4">
+        <div class="flex flex-wrap items-top mb-6">
+          <div class="w-full lg:w-4/12 px-4 ml-auto">
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">About Us</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.cnn.com">Blog</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.instagram.com/?hl=en">Instagram</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free Products</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-4/12 px-4">
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com">MIT License</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://tailwindcss.com/docs/hover-focus-and-other-states">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:bg-sky-700 font-semibold block pb-2 text-sm" href="https://wa.me/message/RLRT5AJ4WU3OP1">Contact Us</a>
+              </li>
+              
+
+   
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-blueGray-300">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-blueGray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">2025</span><a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank"> Authored by
+          <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800">Creative Max</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+        </div>
+      </div>
+    </section>
+      </footer>
+    </main>
+
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>
