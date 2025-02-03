@@ -82,15 +82,18 @@
             </div> 
           </section>
           <section>
-          <div class="h-screen dark:bg-gray-900">
+         <div class="h-screen dark:bg-gray-900">
   <div class="pt-12 bg-gray-50 dark:bg-gray-900 sm:pt-20">
     <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
-        
-        
+        <h2 class="text-3xl font-extrabold leading-9 text-gray-900 dark:text-white sm:text-4xl sm:leading-10">
+          Trusted and Loved 
+        </h2>
+        <p class="mt-3 text-xl leading-7 text-gray-600 dark:text-gray-400 sm:mt-4">
+          we are dedicated in making the best coffees accross East and Central Africa.
+        </p>
       </div>
     </div>
-    
     <div class="pb-12 mt-10 bg-gray-50 dark:bg-gray-900 sm:pb-16">
       <div class="relative">
         <div class="absolute inset-0 h-1/2 bg-gray-50 dark:bg-gray-900"></div>
@@ -100,30 +103,30 @@
               <div
                 class="flex flex-col p-6 text-center border-b border-gray-100 dark:border-gray-700 sm:border-0 sm:border-r">
                 <dt class="order-2 mt-2 text-lg font-medium leading-6 text-gray-500 dark:text-gray-400" id="item-1">
-                  Cups Brewed
+                  Daily deliveries
                 </dt>
                 <dd class="order-1 text-5xl font-extrabold leading-none text-indigo-600 dark:text-indigo-100"
-                  aria-describedby="item-1" id="cupsCount">
+                  aria-describedby="item-1" id="starsCount">
                   0
                 </dd>
               </div>
               <div
                 class="flex flex-col p-6 text-center border-t border-b border-gray-100 dark:border-gray-700 sm:border-0 sm:border-l sm:border-r">
                 <dt class="order-2 mt-2 text-lg font-medium leading-6 text-gray-500 dark:text-gray-400">
-                  Beans Roasted
+                  Cafe visits
                 </dt>
                 <dd class="order-1 text-5xl font-extrabold leading-none text-indigo-600 dark:text-indigo-100"
-                  id="beansCount">
+                  id="downloadsCount">
                   0
                 </dd>
               </div>
               <div
                 class="flex flex-col p-6 text-center border-t border-gray-100 dark:border-gray-700 sm:border-0 sm:border-l">
                 <dt class="order-2 mt-2 text-lg font-medium leading-6 text-gray-500 dark:text-gray-400">
-                  Happy Customers
+                  coffee drinks
                 </dt>
                 <dd class="order-1 text-5xl font-extrabold leading-none text-indigo-600 dark:text-indigo-100"
-                  id="customersCount">
+                  id="sponsorsCount">
                   0
                 </dd>
               </div>
@@ -134,12 +137,12 @@
     </div>
   </div>
 </div>
-          </section>
+
 <script>
   const targets = [
-    { element: document.getElementById('cupsCount'), count: 12000, suffix: '+' },
-    { element: document.getElementById('beansCount'), count: 50000, suffix: '+' },
-    { element: document.getElementById('customersCount'), count: 300000, suffix: '+' }
+    { element: document.getElementById('starsCount'), count: 1450, suffix: '+' },
+    { element: document.getElementById('downloadsCount'), count: 450, suffix: '+' },
+    { element: document.getElementById('sponsorsCount'), count: 250, suffix: '+' }
   ];
 
   // Find the maximum count among all targets
@@ -164,10 +167,9 @@
 
   // Animate count-up for each target with adjusted duration
   targets.forEach(target => {
-    animateCountUp(target, maxCount / 100); // Adjust duration based on max count
+    animateCountUp(target, maxCount / 1); // Adjust duration based on max count
   });
 </script>
-
            
       
     </div>
@@ -411,6 +413,4 @@
         </h5>
       <div class="flex items-center gap-6">
     <a class="text-gray-700 hover:text-orange-600" aria-label="Visit TrendyMinds LinkedIn" href="https://www.linkedin.com/login" target="_blank"><svg
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-8">
-            <path fill="currentColor"
-                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class
